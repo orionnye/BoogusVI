@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://bk5b42oqo2w8n"]
+
+[ext_resource type="Script" path="res://Cards/Deck/Deck.gd" id="1_hnoil"]
+[ext_resource type="PackedScene" uid="uid://joucn503aktm" path="res://Cards/Pile/Pile.tscn" id="2_ddv4f"]
+
+[node name="Deck" type="Node2D"]
+script = ExtResource("1_hnoil")
+
+[node name="Draw" parent="." instance=ExtResource("2_ddv4f")]
+position = Vector2(150, 1600)
+maxCards = 50
+cardCorrectionSpeed = 0.3
+
+[node name="Hand" parent="." instance=ExtResource("2_ddv4f")]
+position = Vector2(800, 1300)
+scale = Vector2(1.5, 1.5)
+offset = Vector2(200, 0)
+maxCards = 5
+visiblePileMarker = false
+cardCorrectionSpeed = 0.3
+
+[node name="Discard" parent="." instance=ExtResource("2_ddv4f")]
+position = Vector2(2700, 1600)
+offset = Vector2(-1, 1)
+maxCards = 50
+cardCorrectionSpeed = 0.3

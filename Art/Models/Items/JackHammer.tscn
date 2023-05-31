@@ -1,0 +1,28 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="ArrayMesh" uid="uid://bjday64761gm7" path="res://Art/Models/JackHammer.obj" id="1_xo77j"]
+[ext_resource type="Shader" path="res://Art/Shaders/Rock.gdshader" id="2_3uhhs"]
+[ext_resource type="Shader" path="res://Art/Shaders/Colors/Silver.gdshader" id="4_ecwvo"]
+[ext_resource type="Shader" path="res://Art/Shaders/Colors/Yellow.gdshader" id="5_alll2"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_escjp"]
+render_priority = 0
+shader = ExtResource("5_alll2")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xyuf4"]
+render_priority = 0
+shader = ExtResource("2_3uhhs")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_u51qt"]
+render_priority = 0
+shader = ExtResource("4_ecwvo")
+
+[node name="JackHammer" type="MeshInstance3D"]
+mesh = ExtResource("1_xo77j")
+surface_material_override/0 = SubResource("ShaderMaterial_escjp")
+surface_material_override/1 = SubResource("ShaderMaterial_xyuf4")
+surface_material_override/2 = SubResource("ShaderMaterial_u51qt")
+surface_material_override/3 = SubResource("ShaderMaterial_u51qt")
+surface_material_override/4 = SubResource("ShaderMaterial_u51qt")
+surface_material_override/5 = SubResource("ShaderMaterial_u51qt")
+surface_material_override/6 = SubResource("ShaderMaterial_u51qt")

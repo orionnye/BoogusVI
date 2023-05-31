@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cxytmm3q5r8na"]
+
+[ext_resource type="Script" path="res://Cards/Card/Sigil.gd" id="1_781w3"]
+
+[node name="Sigil" type="Node2D"]
+process_mode = 3
+scale = Vector2(20, 20)
+script = ExtResource("1_781w3")

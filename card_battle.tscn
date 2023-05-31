@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://bef7tvh6fg0nb"]
+
+[ext_resource type="Script" path="res://Scripts/card_battle.gd" id="1_s8dl8"]
+[ext_resource type="PackedScene" uid="uid://bv4elabpm48im" path="res://Environments/Environment.tscn" id="2_bufjy"]
+[ext_resource type="PackedScene" uid="uid://c7c1r1smd2nvl" path="res://UI/Camera/WorldCamera.tscn" id="3_4mica"]
+[ext_resource type="PackedScene" uid="uid://b0uinky55xrg" path="res://Characters/Default/Character.tscn" id="3_u0dms"]
+
+[node name="CardBattle" type="Node3D"]
+script = ExtResource("1_s8dl8")
+
+[node name="Environment" parent="." instance=ExtResource("2_bufjy")]
+
+[node name="WorldCamera" parent="." instance=ExtResource("3_4mica")]
+transform = Transform3D(1, 0, 0, 0, 0.984196, 0.177085, 0, -0.177085, 0.984196, 0, -0.094, 4.66)
+current = true
+fov = 102.6
+size = 0.075
+
+[node name="Characters" type="Node3D" parent="."]
+
+[node name="Player" parent="Characters" instance=ExtResource("3_u0dms")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 0)
+
+[node name="Enemy" parent="Characters" instance=ExtResource("3_u0dms")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+
+[node name="Enemies" type="Node3D" parent="Characters"]

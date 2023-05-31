@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b0ug7r2ey16dd"
+path="res://.godot/imported/Bar_scene.obj-d4ea59172fa6a19eb17c411beec94362.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Bar_scene.obj-d4ea59172fa6a19eb17c411beec94362.mesh"]
+
+source_file="res://Art/Models/Environments/Bar_scene.obj"
+dest_files=["res://.godot/imported/Bar_scene.obj-d4ea59172fa6a19eb17c411beec94362.mesh", "res://.godot/imported/Bar_scene.obj-d4ea59172fa6a19eb17c411beec94362.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

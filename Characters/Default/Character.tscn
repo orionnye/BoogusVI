@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://b0uinky55xrg"]
+
+[ext_resource type="Script" path="res://Characters/Default/Character.gd" id="1_dy12n"]
+[ext_resource type="PackedScene" uid="uid://b1sb5op0pvwxg" path="res://Art/Models/Characters/MudGolem.tscn" id="2_782e7"]
+[ext_resource type="PackedScene" uid="uid://7tpqbdv532ex" path="res://UI/HealthBar/HealthBar.tscn" id="3_smvbb"]
+[ext_resource type="PackedScene" uid="uid://bk5b42oqo2w8n" path="res://Cards/Deck/Deck.tscn" id="3_vkb73"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_x4tbq"]
+
+[node name="Character" type="Node3D"]
+script = ExtResource("1_dy12n")
+hp = 10
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(2.006, 0, 0, 0, 2.006, 0, 0, 0, 2.006, 0, 1.01375, 0)
+shape = SubResource("CylinderShape3D_x4tbq")
+
+[node name="characterMesh" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -1.07142, 0)
+
+[node name="MudGolem" parent="characterMesh" instance=ExtResource("2_782e7")]
+transform = Transform3D(1, 0, -2.11471e-14, 0, 1, 0, 2.11471e-14, 0, 1, 0, 0, 0)
+
+[node name="Deck" parent="." instance=ExtResource("3_vkb73")]
+visible = false
+
+[node name="HealthBar" parent="." instance=ExtResource("3_smvbb")]
+
+[connection signal="input_event" from="Area3D" to="." method="_on_area_3d_input_event"]
+[connection signal="mouse_entered" from="Area3D" to="." method="_on_area_3d_mouse_entered"]
+[connection signal="mouse_exited" from="Area3D" to="." method="_on_area_3d_mouse_exited"]

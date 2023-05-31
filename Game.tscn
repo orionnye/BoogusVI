@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://cos5g38iaihfx"]
+
+[ext_resource type="Script" path="res://Scripts/Game.gd" id="1_mje8a"]
+
+[node name="Game" type="Node2D"]
+position = Vector2(-1879, -1237)
+scale = Vector2(2.46721, 2.5951)
+script = ExtResource("1_mje8a")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1131.0
+offset_top = 563.0
+offset_right = 1409.0
+offset_bottom = 659.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 50
+text = "Card Game"
+scroll_active = false
+autowrap_mode = 0
+
+[node name="Button" type="Button" parent="."]
+offset_left = 1209.0
+offset_top = 750.0
+offset_right = 1334.0
+offset_bottom = 840.0
+theme_override_font_sizes/font_size = 40
+text = "Play"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

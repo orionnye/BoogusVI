@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://cxm2ql0o2r5rc"]
+
+[ext_resource type="Script" path="res://Events/Battle2/Battle2.gd" id="1_ia75w"]
+[ext_resource type="PackedScene" uid="uid://brvba1t64xjx" path="res://Environments/Environment.tscn" id="2_td4ja"]
+[ext_resource type="Script" path="res://Events/Battle2/UnitHandling.gd" id="3_8bqiy"]
+
+[node name="Battle2" type="Node3D"]
+script = ExtResource("1_ia75w")
+
+[node name="Environment" parent="." instance=ExtResource("2_td4ja")]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.93606, 0.351842, 0, -0.351842, 0.93606, 0, 4.438, 11.868)
+fov = 61.8
+
+[node name="Units" type="Node3D" parent="."]
+script = ExtResource("3_8bqiy")

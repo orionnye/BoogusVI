@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://ohhtloyaq06d"]
+
+[ext_resource type="PackedScene" uid="uid://brvba1t64xjx" path="res://Environments/Environment.tscn" id="1_sivdn"]
+[ext_resource type="Script" path="res://Events/Battle.gd" id="1_uhlv4"]
+[ext_resource type="PackedScene" uid="uid://8nltbtr664q2" path="res://Characters/Team/Team.tscn" id="3_bdm1q"]
+[ext_resource type="Script" path="res://Events/CameraLean.gd" id="3_knoa6"]
+
+[node name="Battle" type="Node3D"]
+script = ExtResource("1_uhlv4")
+
+[node name="Environment" parent="." instance=ExtResource("1_sivdn")]
+script = null
+
+[node name="Allies" parent="." instance=ExtResource("3_bdm1q")]
+
+[node name="Foes" parent="." instance=ExtResource("3_bdm1q")]
+
+[node name="CameraFocus" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.00445056, 0.653778)
+script = ExtResource("3_knoa6")
+lerpSpeed = 1.6
+lerpCorrectSpeed = 0.95
+
+[node name="Camera3D" type="Camera3D" parent="CameraFocus"]
+transform = Transform3D(1, 0, 0, 0, 0.936059, 0.351842, 0, -0.351842, 0.936059, 0, 4.438, 11.868)
+fov = 61.8

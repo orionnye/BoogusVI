@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://debe8dxtrcid7"
+path="res://.godot/imported/Fixed_mud_golem (1).obj-666cd299318b18255c97448f5e9cc47f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Fixed_mud_golem (1).obj-666cd299318b18255c97448f5e9cc47f.mesh"]
+
+source_file="res://Art/Models/Fixed_mud_golem (1).obj"
+dest_files=["res://.godot/imported/Fixed_mud_golem (1).obj-666cd299318b18255c97448f5e9cc47f.mesh", "res://.godot/imported/Fixed_mud_golem (1).obj-666cd299318b18255c97448f5e9cc47f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

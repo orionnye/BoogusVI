@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dm12bohs6iu8q"]
+
+[ext_resource type="Script" path="res://Environments/Grid/Grid.gd" id="1_drunb"]
+[ext_resource type="Script" path="res://Environments/Grid/TileManager.gd" id="2_6dmvg"]
+
+[node name="Grid" type="Node3D"]
+script = ExtResource("1_drunb")
+
+[node name="Tiles" type="Node3D" parent="."]
+script = ExtResource("2_6dmvg")

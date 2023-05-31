@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dl5pkdrji0ey7"
+path="res://.godot/imported/Barrel_Shelf.obj-2e2820ea29745e9a6b93160e30079a9f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Barrel_Shelf.obj-2e2820ea29745e9a6b93160e30079a9f.mesh"]
+
+source_file="res://Art/Models/Barrel_Shelf.obj"
+dest_files=["res://.godot/imported/Barrel_Shelf.obj-2e2820ea29745e9a6b93160e30079a9f.mesh", "res://.godot/imported/Barrel_Shelf.obj-2e2820ea29745e9a6b93160e30079a9f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

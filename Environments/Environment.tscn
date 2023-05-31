@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://brvba1t64xjx"]
+
+[ext_resource type="Script" path="res://Environments/Environment.gd" id="1_qa82y"]
+[ext_resource type="PackedScene" uid="uid://iov2ik87yaem" path="res://Art/Models/Environments/Bar.tscn" id="2_68yqy"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_wrx33"]
+
+[node name="Environment" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.836)
+script = ExtResource("1_qa82y")
+
+[node name="Floor" type="MeshInstance3D" parent="."]
+transform = Transform3D(11, 0, 0, 0, 4.203, 0, 0, 0, 10.133, 0, -1, 1)
+mesh = SubResource("PlaneMesh_wrx33")
+
+[node name="BackDrop" type="MeshInstance3D" parent="."]
+visible = false
+
+[node name="Bar" parent="BackDrop" instance=ExtResource("2_68yqy")]
+transform = Transform3D(-2.259e-07, 0, 5.168, 0, 5.168, 0, -5.168, 0, -2.259e-07, 0, -2.37852, -11.0269)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 13.404, 12)
+light_energy = 2.776
+light_indirect_energy = 2.889
+light_volumetric_fog_energy = 1.094
+light_angular_distance = 0.72

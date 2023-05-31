@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=3 uid="uid://b1sb5op0pvwxg"]
+
+[ext_resource type="ArrayMesh" uid="uid://debe8dxtrcid7" path="res://Art/Models/Fixed_mud_golem (1).obj" id="1_yqls0"]
+[ext_resource type="Shader" path="res://Art/Shaders/MudGolem.gdshader" id="2_6cu80"]
+[ext_resource type="Shader" path="res://Art/Shaders/Glauss.gdshader" id="3_ethar"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ovkie"]
+render_priority = 0
+shader = ExtResource("2_6cu80")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_grtqa"]
+render_priority = 0
+shader = ExtResource("3_ethar")
+
+[node name="MudGolem" type="MeshInstance3D"]
+transform = Transform3D(0.448, 0, 0, 0, 0.448, 0, 0, 0, 0.448, 0, 0, 0)
+mesh = ExtResource("1_yqls0")
+surface_material_override/0 = SubResource("ShaderMaterial_ovkie")
+surface_material_override/1 = SubResource("ShaderMaterial_ovkie")
+surface_material_override/2 = SubResource("ShaderMaterial_ovkie")
+surface_material_override/3 = SubResource("ShaderMaterial_ovkie")
+surface_material_override/4 = SubResource("ShaderMaterial_ovkie")
+surface_material_override/5 = SubResource("ShaderMaterial_ovkie")
+surface_material_override/6 = SubResource("ShaderMaterial_ovkie")
+surface_material_override/7 = SubResource("ShaderMaterial_ovkie")
+surface_material_override/8 = SubResource("ShaderMaterial_grtqa")
+surface_material_override/9 = SubResource("ShaderMaterial_grtqa")
+surface_material_override/10 = SubResource("ShaderMaterial_grtqa")

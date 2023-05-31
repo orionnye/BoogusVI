@@ -1,0 +1,102 @@
+[gd_scene load_steps=15 format=3 uid="uid://iov2ik87yaem"]
+
+[ext_resource type="ArrayMesh" uid="uid://deg3v30kwt65y" path="res://Art/Models/Environments/Fixed_Bar_Scene.obj" id="1_odis4"]
+[ext_resource type="Shader" path="res://Art/Shaders/Wood.gdshader" id="2_4seqr"]
+[ext_resource type="Shader" path="res://Art/Shaders/DarkWood.gdshader" id="3_co5jf"]
+[ext_resource type="Shader" path="res://Art/Shaders/Colors/Brown.gdshader" id="4_em2xm"]
+[ext_resource type="Shader" path="res://Art/Shaders/Colors/Red.gdshader" id="5_b8qr3"]
+[ext_resource type="Shader" path="res://Art/Shaders/Colors/Silver.gdshader" id="6_wlj7s"]
+[ext_resource type="Shader" path="res://Art/Shaders/Boogus.gdshader" id="7_50vd8"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mdko7"]
+render_priority = 0
+shader = ExtResource("3_co5jf")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ypcir"]
+render_priority = 0
+shader = ExtResource("2_4seqr")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hwivk"]
+render_priority = 0
+shader = ExtResource("4_em2xm")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5rhfg"]
+render_priority = 0
+shader = ExtResource("5_b8qr3")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_yvq17"]
+render_priority = 0
+shader = ExtResource("6_wlj7s")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_j4jfe"]
+render_priority = 0
+shader = ExtResource("5_b8qr3")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1ijqj"]
+render_priority = 0
+shader = ExtResource("7_50vd8")
+
+[node name="Bar" type="MeshInstance3D"]
+mesh = ExtResource("1_odis4")
+surface_material_override/1 = SubResource("ShaderMaterial_mdko7")
+surface_material_override/3 = SubResource("ShaderMaterial_mdko7")
+surface_material_override/5 = SubResource("ShaderMaterial_mdko7")
+surface_material_override/7 = SubResource("ShaderMaterial_mdko7")
+surface_material_override/8 = SubResource("ShaderMaterial_mdko7")
+surface_material_override/9 = SubResource("ShaderMaterial_mdko7")
+surface_material_override/10 = SubResource("ShaderMaterial_mdko7")
+surface_material_override/11 = SubResource("ShaderMaterial_mdko7")
+surface_material_override/12 = SubResource("ShaderMaterial_mdko7")
+surface_material_override/13 = SubResource("ShaderMaterial_mdko7")
+surface_material_override/14 = SubResource("ShaderMaterial_ypcir")
+surface_material_override/15 = SubResource("ShaderMaterial_hwivk")
+surface_material_override/16 = SubResource("ShaderMaterial_hwivk")
+surface_material_override/17 = SubResource("ShaderMaterial_hwivk")
+surface_material_override/18 = SubResource("ShaderMaterial_hwivk")
+surface_material_override/19 = SubResource("ShaderMaterial_5rhfg")
+surface_material_override/20 = SubResource("ShaderMaterial_mdko7")
+surface_material_override/21 = SubResource("ShaderMaterial_ypcir")
+surface_material_override/22 = SubResource("ShaderMaterial_ypcir")
+surface_material_override/23 = SubResource("ShaderMaterial_ypcir")
+surface_material_override/24 = SubResource("ShaderMaterial_ypcir")
+surface_material_override/25 = SubResource("ShaderMaterial_mdko7")
+surface_material_override/26 = SubResource("ShaderMaterial_mdko7")
+surface_material_override/27 = SubResource("ShaderMaterial_mdko7")
+surface_material_override/28 = SubResource("ShaderMaterial_yvq17")
+surface_material_override/29 = SubResource("ShaderMaterial_mdko7")
+surface_material_override/30 = SubResource("ShaderMaterial_j4jfe")
+surface_material_override/31 = SubResource("ShaderMaterial_yvq17")
+surface_material_override/32 = SubResource("ShaderMaterial_j4jfe")
+surface_material_override/33 = SubResource("ShaderMaterial_yvq17")
+surface_material_override/34 = SubResource("ShaderMaterial_yvq17")
+surface_material_override/35 = SubResource("ShaderMaterial_yvq17")
+surface_material_override/36 = SubResource("ShaderMaterial_yvq17")
+surface_material_override/37 = SubResource("ShaderMaterial_yvq17")
+surface_material_override/38 = SubResource("ShaderMaterial_yvq17")
+surface_material_override/39 = SubResource("ShaderMaterial_yvq17")
+surface_material_override/40 = SubResource("ShaderMaterial_yvq17")
+surface_material_override/41 = SubResource("ShaderMaterial_1ijqj")
+
+[node name="OmniLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 8.63487e-08, 3.77442e-15, 0, -4.37114e-08, 1, 8.63487e-08, -1, -4.37114e-08, -0.114, 1.326, -0.587)
+spot_range = 7.492
+spot_attenuation = 0.329877
+spot_angle_attenuation = 0.535887
+
+[node name="OmniLight3D2" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 8.63487e-08, 3.77442e-15, 0, -4.37114e-08, 1, 8.63487e-08, -1, -4.37114e-08, -0.146, 1.306, 0.493)
+spot_range = 7.492
+spot_attenuation = 0.329877
+spot_angle_attenuation = 0.535887
+
+[node name="OmniLight3D3" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 8.17966e-08, 1.24186e-14, 5.20117e-15, -2.1541e-07, 1, 8.17966e-08, -1, -2.1541e-07, -3.18094, 1.169, -0.977)
+spot_range = 7.492
+spot_attenuation = 0.329877
+spot_angle_attenuation = 0.535887
+
+[node name="OmniLight3D4" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 8.17966e-08, -1.6816e-14, 3.44358e-14, -2.1541e-07, 1, 8.17966e-08, -1, -2.1541e-07, -3.18794, 1.258, 0.475)
+spot_range = 7.492
+spot_attenuation = 0.329877
+spot_angle_attenuation = 0.535887

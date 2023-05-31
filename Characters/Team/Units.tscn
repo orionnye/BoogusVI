@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0gx41otnu0cc"]
+
+[ext_resource type="Script" path="res://Events/UnitControl.gd" id="1_qjgyj"]
+[ext_resource type="Script" path="res://Events/TilePlacement.gd" id="2_1bq3n"]
+
+[node name="Units" type="Node3D" node_paths=PackedStringArray("tiles")]
+script = ExtResource("1_qjgyj")
+tiles = NodePath("TilesLeft")
+
+[node name="TilesLeft" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000701427, -1.08027, 0)
+script = ExtResource("2_1bq3n")
+tileSize = Vector3(-2.3, 0, 0)
+initialOffset = Vector3(-2, 0, 0)
+direction = Vector3(1, 0, 0)
+
+[connection signal="child_entered_tree" from="." to="." method="_on_child_entered_tree"]

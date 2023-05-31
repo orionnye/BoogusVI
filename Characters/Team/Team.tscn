@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://8nltbtr664q2"]
+
+[ext_resource type="Script" path="res://Events/UnitControl.gd" id="1_ekewk"]
+
+[node name="Units" type="Node3D"]
+script = ExtResource("1_ekewk")
+
+[connection signal="child_entered_tree" from="." to="." method="_on_child_entered_tree"]

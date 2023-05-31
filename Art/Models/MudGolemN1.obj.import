@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://72xagy1xof5"
+path="res://.godot/imported/MudGolemN1.obj-060222aeb6c73548a1d50d896d83489d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/MudGolemN1.obj-060222aeb6c73548a1d50d896d83489d.mesh"]
+
+source_file="res://Art/Models/MudGolemN1.obj"
+dest_files=["res://.godot/imported/MudGolemN1.obj-060222aeb6c73548a1d50d896d83489d.mesh", "res://.godot/imported/MudGolemN1.obj-060222aeb6c73548a1d50d896d83489d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
